@@ -1372,7 +1372,7 @@ require.register("mocha.js", function(module, exports, require){
  * Module dependencies.
  */
 
-var path = require('browser/path')
+// commented out by npm-component: var path = require('browser/path')
   , utils = require('./utils');
 
 /**
@@ -1546,7 +1546,7 @@ Mocha.prototype.loadFiles = function(fn){
  */
 
 Mocha.prototype._growl = function(runner, reporter) {
-  var notify = require('growl');
+  // commented out by npm-component: var notify = require('growl');
 
   runner.on('end', function(){
     var stats = reporter.stats;
@@ -1854,7 +1854,7 @@ require.register("reporters/base.js", function(module, exports, require){
  * Module dependencies.
  */
 
-var tty = require('browser/tty')
+// commented out by npm-component: // commented out by npm-component: var tty = require('browser/tty')
   , diff = require('browser/diff')
   , ms = require('../ms')
   , utils = require('../utils');
@@ -2494,7 +2494,7 @@ require.register("reporters/html-cov.js", function(module, exports, require){
  * Module dependencies.
  */
 
-var JSONCov = require('./json-cov')
+// commented out by npm-component: var JSONCov = require('./json-cov')
   , fs = require('browser/fs');
 
 /**
@@ -2511,7 +2511,7 @@ exports = module.exports = HTMLCov;
  */
 
 function HTMLCov(runner) {
-  var jade = require('jade')
+  // commented out by npm-component: var jade = require('jade')
     , file = __dirname + '/templates/coverage.jade'
     , str = fs.readFileSync(file, 'utf8')
     , fn = jade.compile(str, { filename: file })
@@ -5391,7 +5391,7 @@ require.register("utils.js", function(module, exports, require){
  * Module dependencies.
  */
 
-var fs = require('browser/fs')
+// commented out by npm-component: // commented out by npm-component: var fs = require('browser/fs')
   , path = require('browser/path')
   , join = path.join
   , debug = require('browser/debug')('mocha:watch');
